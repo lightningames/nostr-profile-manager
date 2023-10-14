@@ -4,14 +4,25 @@
     width: 100%;
 };
 
-
+body {
+    background-color: #10182B;
+}
 @import "../node_modules/@picocss/pico/scss/pico.scss";
+
+@media only screen and (prefers-color-scheme: dark) {
+    :root:not([data-theme]) {
+      --background-color: #10182B;
+    }
+}
 
 #mainnav.inactive a {
     display:none;
+    background-color: #10182B;
 }
 .nav-container {
     border-bottom: 1px solid #eee;
+    background-color: #10182B;
+
 }
 .historytable {
     ul {
